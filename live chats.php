@@ -189,8 +189,10 @@ olark.identify('<?php echo $options["Olark"];?>');/*]]>*/</script><noscript><a h
 			  <?php settings_fields( 'zm_chat_settings_group' ); ?>
               <div><input class="margin_botton" type="text" name="zm_chat_settings[Olark]" value="<?php echo $options["Olark"];?>" placeholder="Type your Olark Account ID here" /></div>
               <div><input type="submit" value="Activate" name="submit" id="submit" class="button button-primary"/></div>
+	      	  <img src="http://www.storeya.com/widgets/admin?p=allinone"/>
         	</form>
           </div>
+
 	  </div>
         <?php
 	}

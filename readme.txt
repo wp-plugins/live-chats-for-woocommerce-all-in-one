@@ -9,11 +9,11 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Stable tag: trunk
 Contributors: Chudesnet
 
-Live Chats for WooCommerce Plugin enables simple switch between most popular Live Chat widgets for woocommrce sites.
+Live Chats for WooCommerce Plugin enables simple switch between most popular Live Chat widgets for WooCommerce sites.
 
 == Description ==
 
-Live Chats for WooCommrce - All in One is a simple WP plugin that enables you to easy switch between the most popular Live Chats widgets for WooCommrce. Current version contains [Zopim](http://zopim.com/ "Zopim official site")  live chat and [Olrak](http://olark.com "Official chat site") live chat. 
+Live Chats for WooCommrce - All in One is a simple WP plugin that enables you to easy switch between the most popular Live Chats widgets for WooCommrce. Current version contains Zopim live chat and Olark live chat. 
 
 = Every chat included in this plugin supports the following features =
 
@@ -40,13 +40,13 @@ Zopim is a live chat support software that lets you install a widget on your web
 
 Zopim works with nearly every browser, IM client and mobile phone out there. Enjoy the flexibility to provide live support from anywhere.
 
-Read more from Zopim live chat [official page](http://zopim.com/ "Zopim official site")
+Read more from Zopim live chat [official page](http://bit.ly/1nteRR3 "Zopim official site")
 
 *   Olark
 
 Olark provides clean integration with tools you already know and love so you can actually focus on selling and support. You can see all the activity on your site at once in real-time and proactively chat with your visitors.
 
-Read more from Olark live chat [official page](http://www.olark.com/ "Olark official site")
+Read more from Olark live chat [official page](http://bit.ly/RA5p0P "Olark official site")
 
 == Installation ==
 Live Chats for WooCommrce - All in One plugin can be installed by WordPress plugin installer or by manually uploading files.
