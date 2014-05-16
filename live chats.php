@@ -171,27 +171,29 @@ olark.identify('<?php echo $options["Olark"];?>');/*]]>*/</script><noscript><a h
 			  echo "<h2>No active chat";
 			?>
           </h2>
+
+			<div class="item">
+				<h2>Olark Setting <?php if($options["active"]=="Olark") echo " (Active)";?></h2>
+				<div class="txtlabel">Account ID <a href="http://bit.ly/1gbpDJu" target="_blank">don't have one? get on official site</a></div>
+				<form method="post" action="options.php">
+				  <?php settings_fields( 'zm_chat_settings_group' ); ?>
+				  <div><input class="margin_botton" type="text" name="zm_chat_settings[Olark]" value="<?php echo $options["Olark"];?>" placeholder="Type your Olark Account ID here" /></div>
+				  <div><input type="submit" value="Activate" name="submit" id="submit" class="button button-primary"/></div>
+				  <img src="http://www.storeya.com/widgets/admin?p=allinone"/>
+				</form>
+			</div>        
+	  
+			<div class="item">
+				<h2>Zopim Setting <?php if($options["active"]=="Zopim") echo " (Active)";?></h2>
+				<div class="txtlabel">Widget ID <a href="http://bit.ly/1lpzAlx" target="_blank">don't have one? get on official site</a></div>
+				<form method="post" action="options.php">
+				  <?php settings_fields( 'zm_chat_settings_group' ); ?>
+				  <div><input class="margin_botton" type="text" name="zm_chat_settings[Zopim]" value="<?php echo $options["Zopim"];?>" placeholder="Type your Zopim Widget ID here" /></div>
+				  <div><input type="submit" value="Activate" name="submit" id="submit" class="button button-primary"/></div>
+				</form>
+			</div>
           
-          <div class="item">
-            <h2>Zopim Setting <?php if($options["active"]=="Zopim") echo " (Active)";?></h2>
-			<div class="txtlabel">Widget ID <a href="http://bit.ly/1lpzAlx" target="_blank">don't have one? get on official site</a></div>
-			<form method="post" action="options.php">
-			  <?php settings_fields( 'zm_chat_settings_group' ); ?>
-              <div><input class="margin_botton" type="text" name="zm_chat_settings[Zopim]" value="<?php echo $options["Zopim"];?>" placeholder="Type your Zopim Widget ID here" /></div>
-              <div><input type="submit" value="Activate" name="submit" id="submit" class="button button-primary"/></div>
-			</form>
-          </div>
           
-          <div class="item">
-            <h2>Olark Setting <?php if($options["active"]=="Olark") echo " (Active)";?></h2>
-            <div class="txtlabel">Account ID <a href="http://bit.ly/RA5p0P" target="_blank">don't have one? get on official site</a></div>
-			<form method="post" action="options.php">
-			  <?php settings_fields( 'zm_chat_settings_group' ); ?>
-              <div><input class="margin_botton" type="text" name="zm_chat_settings[Olark]" value="<?php echo $options["Olark"];?>" placeholder="Type your Olark Account ID here" /></div>
-              <div><input type="submit" value="Activate" name="submit" id="submit" class="button button-primary"/></div>
-	      	  <img src="http://www.storeya.com/widgets/admin?p=allinone"/>
-        	</form>
-          </div>
 
 	  </div>
         <?php
