@@ -2,8 +2,9 @@
 
 Plugin Name: Live Chats for WooCommrce - All in One
 Requires at least: 3.0
-Tested up to: 3.9
-Tags: live chat, chat, plugin, widget, customer support, live support, wordpress plugin, live help, wordpress chat, woocommrce, woocommrce plugins
+Tested up to: 3.9.1
+Tags: live chat, chat, plugin, widget, customer support, live support, wordpress plugin, live help, wordpress chat, woocommrce, woocommrce plugins, woocommerce add-ons, woocommerce addons, woocommerce extensions 
+
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Stable tag: trunk
