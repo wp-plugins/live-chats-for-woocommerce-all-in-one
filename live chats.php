@@ -7,7 +7,6 @@ Version: 1.0.1
 */
 
 
-
 $zm_poly = new zm_chat;
 
 $plugin = plugin_basename( __FILE__ );
