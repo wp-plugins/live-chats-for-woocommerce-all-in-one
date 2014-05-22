@@ -79,4 +79,4 @@ We've developed this plugin for our site when found ourself installing chat spec
 
 1. Settings screen
 2. Zopim chat live example
-3. Olrak default look and feel
+3. Olrak default look and feel 
