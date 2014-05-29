@@ -1,5 +1,4 @@
 ﻿=== Live Chats for WooCommrce - All in One ===
-
 Plugin Name: Live Chats for WooCommrce - All in One
 Requires at least: 3.0
 Tested up to: 3.9.1
