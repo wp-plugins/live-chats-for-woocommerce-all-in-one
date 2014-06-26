@@ -13,7 +13,7 @@ $plugin = plugin_basename( __FILE__ );
 add_filter( "plugin_action_links_$plugin", 'plugin_add_settings_link' );
 
 function plugin_add_settings_link( $links ) {
-	$settings_link = '<a href="admin.php?page=live%20chats/live%20chats.php">Settings</a>';
+	$settings_link = '<a href="admin.php?page=live-chats-for-woocommerce-all-in-one/live%20chats.php">Settings</a>';
 	array_push( $links, $settings_link );
 	return $links;
 }
@@ -106,7 +106,7 @@ olark.identify('<?php echo $options["Olark"];?>');/*]]>*/</script><noscript><a h
 	  .chats .item{
 		background-color: #EAEAEA;
 		margin-top: 20px;
-		padding: 20px;
+		padding: 10px 20px;
 		width: 400px;
 	  }
 	  .inline{
@@ -146,12 +146,20 @@ olark.identify('<?php echo $options["Olark"];?>');/*]]>*/</script><noscript><a h
 			font-size:15px;
 		}
 		.chats .item .txtlabel a{
-			font-size:12px;
+			font-size:13px;
+			font-weight:bold;
 		}
 		
 		.chats .item h2{
 			padding-top:0px;
+			font-size:20px;
 		}
+		.optin{
+			padding:30px;
+			font-size:15px;
+			font-weight:bold;
+		}
+
 	  </style>
 	  <div class="wrap chats">
           <h1>Your Live Chat Settings</h1><h2></h2>
@@ -167,16 +175,16 @@ olark.identify('<?php echo $options["Olark"];?>');/*]]>*/</script><noscript><a h
           	<?php
 			}
 			else
-			  echo "<h2>No active chat";
+			  echo "<h2 style=\"font-size:14px; color:red;\">No active chat selected. Choose your chat service from the list.";
 			?>
           </h2>
 
 			<div class="item">
 				<h2>Olark Setting <?php if($options["active"]=="Olark") echo " (Active)";?></h2>
 				<div class="txtlabel">Account ID <a href="http://bit.ly/1gbpDJu" target="_blank">don't have one? get on official site</a></div>
-				<form method="post" action="options.php">
+				<form method="post" action="options.php" onsubmit="return validateOlark();">
 				  <?php settings_fields( 'zm_chat_settings_group' ); ?>
-				  <div><input class="margin_botton" type="text" name="zm_chat_settings[Olark]" value="<?php echo $options["Olark"];?>" placeholder="Type your Olark Account ID here" /></div>
+				  <div><input class="margin_botton" type="text" id="o_text" name="zm_chat_settings[Olark]" value="<?php echo $options["Olark"];?>" placeholder="Type your Olark Account ID here" /></div>
 				  <div><input type="submit" value="Activate" name="submit" id="submit" class="button button-primary"/></div>
 				  <img src="http://www.storeya.com/widgets/admin?p=allinone"/>
 				</form>
@@ -185,16 +193,51 @@ olark.identify('<?php echo $options["Olark"];?>');/*]]>*/</script><noscript><a h
 			<div class="item">
 				<h2>Zopim Setting <?php if($options["active"]=="Zopim") echo " (Active)";?></h2>
 				<div class="txtlabel">Widget ID <a href="http://bit.ly/1lpzAlx" target="_blank">don't have one? get on official site</a></div>
-				<form method="post" action="options.php">
+				<form method="post" action="options.php" onsubmit="return validate('zm_text');">
 				  <?php settings_fields( 'zm_chat_settings_group' ); ?>
-				  <div><input class="margin_botton" type="text" name="zm_chat_settings[Zopim]" value="<?php echo $options["Zopim"];?>" placeholder="Type your Zopim Widget ID here" /></div>
+				  <div><input class="margin_botton" id="zm_text" type="text" name="zm_chat_settings[Zopim]" value="<?php echo $options["Zopim"];?>" placeholder="Type your Zopim Widget ID here" /></div>
 				  <div><input type="submit" value="Activate" name="submit" id="submit" class="button button-primary"/></div>
 				</form>
 			</div>
-          
+ 
+	  <div class="optin">
+We recommend you also to check how to <br/> <a href="http://bit.ly/TBFFlj" target="_blank">Increase Your Website's Conversion Rate NOW</a>
+ </div>
+
+
+ 
+ 
           
 
 	  </div>
+	  
+	  
+	  <script>
+		function validate(inputName)
+		{
+			if(document.getElementById(inputName).value == '')
+			{
+				alert('Please fill Widget ID');
+				return false;
+			}
+			return true;
+		}
+		
+		function validateOlark()
+		{
+			if(document.getElementById("o_text").value == '')
+			{
+				alert('Please fill Account ID');
+				return false;
+			}
+			return true;
+		}
+	  
+	  </script>
+	  
+	  
+	  
+	  
         <?php
 	}
 		
