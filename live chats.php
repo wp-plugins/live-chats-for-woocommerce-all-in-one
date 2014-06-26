@@ -3,7 +3,7 @@
 Plugin Name: Live Chats
 Description: Select or change your live chat provider in one click.
 Author: Chudesnet
-Version: 1.0.1
+Version: 1.2.1
 */
 
 
@@ -201,7 +201,7 @@ olark.identify('<?php echo $options["Olark"];?>');/*]]>*/</script><noscript><a h
 			</div>
  
 	  <div class="optin">
-We recommend you also to check how to <br/> <a href="http://bit.ly/TBFFlj" target="_blank">Increase Your Website's Conversion Rate NOW</a>
+ Check out the best lead-generation plugin for Wordress and <br/> <a href="http://bit.ly/TBFFlj" target="_blank">Increase Your Website's Conversion Rate NOW</a>
  </div>
 
 
