@@ -40,13 +40,11 @@ Zopim is a live chat support software that lets you install a widget on your web
 
 Zopim works with nearly every browser, IM client and mobile phone out there. Enjoy the flexibility to provide live support from anywhere.
 
-Read more from Zopim live chat [official page](http://bit.ly/1nteRR3 "Zopim official site")
 
 *   Olark
 
 Olark provides clean integration with tools you already know and love so you can actually focus on selling and support. You can see all the activity on your site at once in real-time and proactively chat with your visitors.
 
-Read more from Olark live chat [official page](http://bit.ly/RA5p0P "Olark official site")
 
 == Installation ==
 Live Chats for WooCommrce - All in One plugin can be installed by WordPress plugin installer or by manually uploading files.
@@ -78,4 +76,4 @@ We've developed this plugin for our site when found ourself installing chat spec
 
 1. Settings screen.
 2. Zopim chat live example.
-3. Olrak default look and feel
+3. Olrak default look and feel.
