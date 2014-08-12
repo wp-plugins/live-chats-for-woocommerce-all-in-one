@@ -21,15 +21,10 @@ function plugin_add_settings_link( $links ) {
 class zm_chat{
 	
 	function __construct(){
-		
-		
 		add_action( "admin_menu",array($this,"reg_menu"));
 		add_action( 'admin_init', array($this,'register_mysettings') );
 		add_action( 'wp_footer', array($this,'print_script'));
-				
 	}
-	
-	
 	
 	function print_script(){
 		$options=get_option("zm_chat_settings_group");
