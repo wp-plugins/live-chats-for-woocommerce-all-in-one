@@ -198,7 +198,6 @@ olark.identify('<?php echo $options["Olark"];?>');/*]]>*/</script><noscript><a h
 	  <div class="optin">
  Check out the best lead-generation plugin for Wordress and <br/> <a href="http://bit.ly/TBFFlj" target="_blank">Increase Your Website's Conversion Rate NOW</a>
  </div>
-
 	  </div>
 	  
 	  <script>
