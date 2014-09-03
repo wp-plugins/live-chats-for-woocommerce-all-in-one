@@ -3,7 +3,7 @@
 Plugin Name: Live Chats
 Description: Select or change your live chat provider in one click.
 Author: Chudesnet
-Version: 1.2.2
+Version: 1.2.3
 */
 
 

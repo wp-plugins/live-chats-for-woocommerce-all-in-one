@@ -34,7 +34,7 @@ Live Chats for WooCommrce - All in One is a simple WP plugin that enables you to
 
 = Supported services: =
 
-*	Zopim
+*	Zopim 
 
 Zopim is a live chat support software that lets you install a widget on your website to chat and sell directly to your online customers. It will help you to see who is on your site in real time. Then you can provide live customer help when they have a query.
 
