@@ -73,7 +73,6 @@ Live Chats for WooCommrce - All in One plugin can be installed by WordPress plug
 We've developed this plugin for our site when found ourself installing chat specific plugins for every chat service we wanted to try. So now we are sharing it as a plugin just to save to someone some time and effort :-)
 
 == Screenshots ==
-
 1. Settings screen
 2. Zopim chat live example
 3. Olrak default look and feel
