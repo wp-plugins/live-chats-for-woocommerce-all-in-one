@@ -47,6 +47,7 @@ Olark provides clean integration with tools you already know and love so you can
 
 
 == Installation ==
+
 Live Chats for WooCommrce - All in One plugin can be installed by WordPress plugin installer or by manually uploading files.
 
 = WordPress plugin installer method =
