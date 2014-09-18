@@ -23,9 +23,9 @@ Live Chats for WooCommrce - All in One is a simple WP plugin that enables you to
 *   Customizable Chat Buttons (custom image, location ...)
 *   Customizable Chat Window (including CSS/HTML editors)
 *   Offline Messaging System (via Email)
-*	Pricing plan includes Free version
+*   Pricing plan includes Free version
 *   Flexible & Customizable API
-*	Service should provide Email AND Live Chat Support
+*   Service should provide Email AND Live Chat Support
 
 = Coming soon ... =
 
