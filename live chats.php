@@ -175,6 +175,16 @@ olark.identify('<?php echo $options["Olark"];?>');/*]]>*/</script><noscript><a h
           </h2>
 
 			<div class="item">
+				<h2>Zopim Setting <?php if($options["active"]=="Zopim") echo " (Active)";?></h2>
+				<div class="txtlabel">Widget ID <a href="http://bit.ly/1lpzAlx" target="_blank">don't have one? get on official site</a></div>
+				<form method="post" action="options.php" onsubmit="return validate('zm_text');">
+				  <?php settings_fields( 'zm_chat_settings_group' ); ?>
+				  <div><input class="margin_botton" id="zm_text" type="text" name="zm_chat_settings[Zopim]" value="<?php echo $options["Zopim"];?>" placeholder="Type your Zopim Widget ID here" /></div>
+				  <div><input type="submit" value="Activate" name="submit" id="submit" class="button button-primary"/></div>
+				</form>
+			</div>
+
+			<div class="item">
 				<h2>Olark Setting <?php if($options["active"]=="Olark") echo " (Active)";?></h2>
 				<div class="txtlabel">Account ID <a href="http://bit.ly/1gbpDJu" target="_blank">don't have one? get on official site</a></div>
 				<form method="post" action="options.php" onsubmit="return validateOlark();">
@@ -185,15 +195,6 @@ olark.identify('<?php echo $options["Olark"];?>');/*]]>*/</script><noscript><a h
 				</form>
 			</div>        
 	  
-			<div class="item">
-				<h2>Zopim Setting <?php if($options["active"]=="Zopim") echo " (Active)";?></h2>
-				<div class="txtlabel">Widget ID <a href="http://bit.ly/1lpzAlx" target="_blank">don't have one? get on official site</a></div>
-				<form method="post" action="options.php" onsubmit="return validate('zm_text');">
-				  <?php settings_fields( 'zm_chat_settings_group' ); ?>
-				  <div><input class="margin_botton" id="zm_text" type="text" name="zm_chat_settings[Zopim]" value="<?php echo $options["Zopim"];?>" placeholder="Type your Zopim Widget ID here" /></div>
-				  <div><input type="submit" value="Activate" name="submit" id="submit" class="button button-primary"/></div>
-				</form>
-			</div>
  
 	  <div class="optin">
  Check out the best lead-generation plugin for Wordress and <br/> <a href="http://bit.ly/TBFFlj" target="_blank">Increase Your Website's Conversion Rate NOW</a>
