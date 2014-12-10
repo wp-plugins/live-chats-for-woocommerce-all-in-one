@@ -29,6 +29,7 @@ Live Chats for WooCommrce - All in One is a simple WP plugin that enables you to
 
 = Coming soon ... =
 
+* Integration with www.websitealive.com
 * A/B testing between two chats service providers
 * More chat services
 
