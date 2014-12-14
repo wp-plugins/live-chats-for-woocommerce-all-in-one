@@ -47,6 +47,12 @@ Zopim works with nearly every browser, IM client and mobile phone out there. Enj
 Olark provides clean integration with tools you already know and love so you can actually focus on selling and support. You can see all the activity on your site at once in real-time and proactively chat with your visitors.
 
 
+* 	WebsiteAlive
+
+
+WebsiteAlive is the easy-to-use Live Chat/Click-To-Call solution for your WordPress website. Visitors can immediately chat or initiate a click-to-call session with someone at your company who can answer their questions, in real-time. This WordPress plug-in instantly updates your WordPress site with WebsiteAlive Tracking Code which tracks visitors in real-time and also displays a call-to-action icon.
+
+
 == Installation ==
 
 Live Chats for WooCommrce - All in One plugin can be installed by WordPress plugin installer or by manually uploading files.
@@ -79,3 +85,4 @@ We've developed this plugin for our site when found ourself installing chat spec
 1. Settings screen.
 2. Zopim chat live example.
 3. Olrak default look and feel.
+4. WebsiteAlive examples.

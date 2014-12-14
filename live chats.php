@@ -67,6 +67,23 @@ olark.identify('<?php echo $options["Olark"];?>');/*]]>*/</script><noscript><a h
 <!-- end olark code -->
 		<?php		
 		}
+		elseif($options["active"]=="Websitealive"){
+		?>
+<script type="text/javascript" charset="utf-8">		
+function wsa_include_js(){
+var wsa_host = (("https:" == document.location.protocol) ? "https://" : "http://");
+var js = document.createElement("script");
+js.setAttribute("language", "javascript");
+js.setAttribute("type", "text/javascript");
+js.setAttribute("src",wsa_host + "tracking.websitealive.com/vTracker_v2.asp?objectref=<?php echo $options["Websitealive"];?>&groupid=<?php echo $options["Websitealive2"];?>&websiteid=<?php echo $options["Websitealive3"];?>");
+document.getElementsByTagName("head").item(0).appendChild(js);
+}
+if (window.attachEvent) {window.attachEvent("onload", wsa_include_js);}
+else if (window.addEventListener) {window.addEventListener("load", wsa_include_js, false);}
+else {document.addEventListener("load", wsa_include_js, false);}
+</script>
+		<?php		
+		}
 		echo "<!--End Live Chats-->\n";
 	}
 	
@@ -87,6 +104,12 @@ olark.identify('<?php echo $options["Olark"];?>');/*]]>*/</script><noscript><a h
 		elseif(isset($sett["Olark"])){
 			$options["Olark"]=$sett["Olark"];
 			$options["active"]="Olark";
+		}
+		elseif(isset($sett["Websitealive"])){
+			$options["Websitealive"]=$sett["Websitealive"];
+			$options["Websitealive2"]=$sett["Websitealive2"];
+			$options["Websitealive3"]=$sett["Websitealive3"];
+			$options["active"]="Websitealive";
 		}
 		elseif(isset($sett["reset"])){
 			$options["active"]=false;
@@ -191,14 +214,21 @@ olark.identify('<?php echo $options["Olark"];?>');/*]]>*/</script><noscript><a h
 				  <?php settings_fields( 'zm_chat_settings_group' ); ?>
 				  <div><input class="margin_botton" type="text" id="o_text" name="zm_chat_settings[Olark]" value="<?php echo $options["Olark"];?>" placeholder="Type your Olark Account ID here" /></div>
 				  <div><input type="submit" value="Activate" name="submit" id="submit" class="button button-primary"/></div>
-				  <img src="http://www.storeya.com/widgets/admin?p=allinone"/>
 				</form>
 			</div>        
 	  
- 
-	  <div class="optin">
- Check out the best lead-generation plugin for Wordress and <br/> <a href="http://bit.ly/TBFFlj" target="_blank">Increase Your Website's Conversion Rate NOW</a>
- </div>
+			<div class="item">
+				<h2>WebsiteAlive Setting <?php if($options["active"]=="Websitealive") echo " (Active)";?></h2>
+				<div class="txtlabel">Account settings <a href="http://bit.ly/1ruRqGR" target="_blank">don't have one? get on official site</a></div>
+				<form method="post" action="options.php" onsubmit="return validateWebsitealive();">
+				  <?php settings_fields( 'zm_chat_settings_group' ); ?>
+				  <div><input class="margin_botton" type="text" id="ws1_text" name="zm_chat_settings[Websitealive]" value="<?php echo $options["Websitealive"];?>" placeholder="Type your ObjectRef here" /></div>
+				  <div><input class="margin_botton" type="text" id="ws2_text" name="zm_chat_settings[Websitealive2]" value="<?php echo $options["Websitealive2"];?>" placeholder="Type your GroupID here" /></div>
+				  <div><input class="margin_botton" type="text" id="ws3_text" name="zm_chat_settings[Websitealive3]" value="<?php echo $options["Websitealive3"];?>" placeholder="Type your WebsiteID here" /></div>
+				  <div><input type="submit" value="Activate" name="submit" id="submit" class="button button-primary"/></div>
+				</form>
+			</div>
+	  
 	  </div>
 	  
 	  <script>
@@ -217,6 +247,26 @@ olark.identify('<?php echo $options["Olark"];?>');/*]]>*/</script><noscript><a h
 			if(document.getElementById("o_text").value == '')
 			{
 				alert('Please fill Account ID');
+				return false;
+			}
+			return true;
+		}
+		
+		function validateWebsitealive()
+		{
+			if(document.getElementById("ws1_text").value == '')
+			{
+				alert('Please fill Object ID');
+				return false;
+			}
+			if(document.getElementById("ws2_text").value == '')
+			{
+				alert('Please fill Group ID');
+				return false;
+			}
+			if(document.getElementById("ws3_text").value == '')
+			{
+				alert('Please fill Website ID');
 				return false;
 			}
 			return true;
