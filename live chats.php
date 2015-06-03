@@ -199,7 +199,7 @@ else {document.addEventListener("load", wsa_include_js, false);}
 
 			<div class="item">
 				<h2>Zopim Setting <?php if($options["active"]=="Zopim") echo " (Active)";?></h2>
-				<div class="txtlabel">Widget ID <a href="http://bit.ly/1lpzAlx" target="_blank">don't have one? get on official site</a></div>
+				<div class="txtlabel">Widget ID <a href="http://bit.ly/1JlZxRl" target="_blank">don't have one? get on official site</a></div>
 				<form method="post" action="options.php" onsubmit="return validate('zm_text');">
 				  <?php settings_fields( 'zm_chat_settings_group' ); ?>
 				  <div><input class="margin_botton" id="zm_text" type="text" name="zm_chat_settings[Zopim]" value="<?php echo $options["Zopim"];?>" placeholder="Type your Zopim Widget ID here" /></div>
