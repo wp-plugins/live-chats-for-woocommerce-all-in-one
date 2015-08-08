@@ -3,7 +3,7 @@ Plugin Name: Live Chats for WooCommrce - All in One
 Requires at least: 3.0
 Tags: live chat, livechat, live-chat, chat, Website Chat, help desk, helpdesk, email ticketing, ticketing, support software, live chat software, wordpress live chat, wordpress help desk, live chat inc, web chat, webchat, Facebook chat, phone, click to call, skype chat, zopim, snapengage, zendesk, olark, clickdesk, click desk, live help, livehelp, livesupport, live support, contact call, chat on IM, IM Chat, online support, Google chat button, chat button, contact us, contact plugin, contact form, offline, csupport, help desk software, wordpress live chat plugin, wordpress live chat, live chat services, php live chat, live chatting, live web chat, chat online, free chat, online chat, chats
 
-Tested up to: 4.2
+Tested up to: 4.3
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Stable tag: trunk
