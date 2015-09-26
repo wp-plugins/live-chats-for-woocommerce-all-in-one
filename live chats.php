@@ -209,7 +209,7 @@ else {document.addEventListener("load", wsa_include_js, false);}
 
 			<div class="item">
 				<h2>Olark Setting <?php if($options["active"]=="Olark") echo " (Active)";?></h2>
-				<div class="txtlabel">Account ID <a href="http://bit.ly/1gbpDJu" target="_blank">don't have one? get on official site</a></div>
+				<div class="txtlabel">Account ID <a href="http://special.olark.com/cvM9s" target="_blank">don't have one? get on official site</a></div>
 				<form method="post" action="options.php" onsubmit="return validateOlark();">
 				  <?php settings_fields( 'zm_chat_settings_group' ); ?>
 				  <div><input class="margin_botton" type="text" id="o_text" name="zm_chat_settings[Olark]" value="<?php echo $options["Olark"];?>" placeholder="Type your Olark Account ID here" /></div>
